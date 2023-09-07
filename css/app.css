@@ -18,6 +18,7 @@
 
 img {
   padding-top: 10px;
+  width: 100%;
 }
 
 .app-content{
@@ -38,9 +39,12 @@ img {
 
 .user-name{
   color: rgb(255, 255, 255);
-  background-color:#68737ec6 ;
+  background-color:#68737ec6;
 }
 
+.fa-microphone-slash{
+  background-color: grey;
+}
 
 
 
