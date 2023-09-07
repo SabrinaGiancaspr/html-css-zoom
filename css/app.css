@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+  color: white;
+}
 #app{
   height: 100vh;
   overflow: hidden;
@@ -36,7 +38,6 @@ img {
 }
 
 .user-name{
-  color: rgb(255, 255, 255);
   background-color:#68737ec6;
 }
 
@@ -50,4 +51,21 @@ img {
   width: 100%;
   min-height: 80px;
   border: 1px solid rgb(255, 255, 255);
+  display: flex;
+}
+
+.col-4{
+  flex-basis: calc((100% / 12)* 4);
+  border: 1px solid white;
+}
+
+.fa-microphone .fa-video .button{
+  font-size: 30px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.description{
+  font-size: 15px;
+  padding-right: 8px;
 }
