@@ -9,3 +9,7 @@
   overflow: hidden;
   background-color: black;
 }
+
+.main-container{
+  border: 1px solid black;
+}
