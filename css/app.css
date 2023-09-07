@@ -11,9 +11,7 @@
 }
 
 .main-container{
-  /* border: 1px solid rgb(255, 255, 255); */
-  min-height: 820px;
-  margin:70px 150px 70px 150px;
+  margin:100px 150px 70px 150px;
 }
 
 img {
@@ -46,5 +44,10 @@ img {
   background-color: grey;
 }
 
-
-
+.toolbar{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 80px;
+  border: 1px solid rgb(255, 255, 255);
+}
