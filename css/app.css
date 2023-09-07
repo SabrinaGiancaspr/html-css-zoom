@@ -16,24 +16,30 @@
   margin:70px 150px 70px 150px;
 }
 
+img {
+  padding-top: 10px;
+}
+
 .app-content{
   display: flex;
   flex-wrap: wrap;
-  position: relative;
 }
 
-img{
-  padding-top: 10px;
+.card {
+  position: relative; 
+  padding: 5px;
+}
+
+.details{
+  position: absolute;
+  left: 0;
+  bottom: 7px;
 }
 
 .user-name{
   color: rgb(255, 255, 255);
   background-color:#68737ec6 ;
-  position: absolute;
-  bottom: 7px;
-  left: 0;
 }
-
 
 
 
