@@ -11,7 +11,30 @@
 }
 
 .main-container{
-  border: 1px solid rgb(255, 255, 255);
+  /* border: 1px solid rgb(255, 255, 255); */
   min-height: 820px;
-  margin: 60px 60px 0 60px;
+  margin:70px 150px 70px 150px;
 }
+
+.app-content{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+img{
+  padding-top: 10px;
+}
+
+.user-name{
+  color: rgb(255, 255, 255);
+  background-color:#68737ec6 ;
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+}
+
+
+
+
+
