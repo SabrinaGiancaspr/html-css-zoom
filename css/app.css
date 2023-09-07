@@ -45,6 +45,12 @@ img {
   background-color: grey;
 }
 
+
+.page-footer{
+  width: 100%;
+}
+
+
 .toolbar{
   position: fixed;
   bottom: 0;
@@ -53,15 +59,21 @@ img {
   border: 1px solid rgb(255, 255, 255);
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   flex-direction: row;
-}
+} 
 
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .col-4{
   flex-basis: calc((100% / 12)* 4);
   border: 1px solid white;
 }
 
-.fa-microphone .fa-video .button{
+/* .fa-microphone .fa-video .button{
   font-size: 30px;
   padding-left: 20px;
   padding-top: 10px;
@@ -81,4 +93,4 @@ img {
   min-height: 70px;
   background-color: grey;
   color: red;
-}
+} */
