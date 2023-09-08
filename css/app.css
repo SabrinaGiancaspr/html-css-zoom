@@ -24,6 +24,9 @@ img {
 .app-content{
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1;
+  overflow: auto;
+  /* flex-direction: column; */
 }
 
 .card {
@@ -41,56 +44,36 @@ img {
   background-color:#68737ec6;
 }
 
-.fa-microphone-slash{
-  background-color: grey;
+.app-toolbar{
+  flex-shrink: 0;
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between;
 }
 
+.icon{
+  text-align: center;
+}
+
+.icon i {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.toolbar-item{
+  text-align: center;
+  gap: 12px;
+  padding: 0 16px;
+}
+.toolbar,
+.toolbar-item{
+  display: flex;
+  
+}
 
 .page-footer{
   width: 100%;
 }
 
 
-.toolbar{
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  min-height: 80px;
-  border: 1px solid rgb(255, 255, 255);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
-} 
-
-.icon{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.col-4{
-  flex-basis: calc((100% / 12)* 4);
-  border: 1px solid white;
-}
-
-/* .fa-microphone .fa-video .button{
-  font-size: 30px;
-  padding-left: 20px;
-  padding-top: 10px;
-}
-
-.description{
-  font-size: 15px;
-  padding-right: 8px;
-}
-
-.button{
-  display: inline-block;
-}
-
-.exit{
-  width: 100px;
-  min-height: 70px;
-  background-color: grey;
-  color: red;
-} */
