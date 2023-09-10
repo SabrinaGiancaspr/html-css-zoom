@@ -3,41 +3,60 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body{
   color: white;
 }
+
+img{
+  max-width: 100%;
+  display: block; 
+  object-fit: contain;
+}
+
 #app{
   height: 100vh;
   overflow: hidden;
+  display: flex;
   background-color: black;
+  flex-direction: column;
+  color: white;
 }
 
-.main-container{
-  margin:100px 150px 70px 150px;
-}
-
-img {
-  padding-top: 10px;
-  width: 100%;
-}
 
 .app-content{
-  display: flex;
-  flex-wrap: wrap;
   flex-grow: 1;
   overflow: auto;
-  /* flex-direction: column; */
+  padding: 60px;
 }
 
-.card {
+.webcam {
   position: relative; 
   padding: 5px;
+  width: 200px;
+}
+
+.webcam-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .details{
   position: absolute;
-  left: 5;
-  bottom: 7px;
+	padding: 4px;
+	display: block;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+	bottom: 0;
+	left: 0;
+}
+
+.webcam img {
+	display: block;
+	aspect-ratio: 16/9;
+	object-fit: cover;
+	width: 100%;
 }
 
 .user-name{
@@ -46,34 +65,43 @@ img {
 
 .app-toolbar{
   flex-shrink: 0;
-  background-color: #222222;
+	background-color: #222222;;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.toolbar,
+.toolbar-item{
   display: flex;
-  justify-content: space-between;
+}
+
+.toolbar-item{
+  align-items: center;
+  gap: 10px;
+  padding: 16px 16px;
+}
+
+,.toolbar-item > i{
+  font-size: 13px;
 }
 
 .icon{
   text-align: center;
+  font-size: 13px;
 }
 
-.icon i {
-  font-size: 20px;
+.icon i{
   display: block;
+  font-size: 17px;
   margin-bottom: 10px;
 }
-
-.toolbar-item{
-  text-align: center;
-  gap: 12px;
-  padding: 0 16px;
-}
-.toolbar,
-.toolbar-item{
-  display: flex;
-  
-}
-
 .page-footer{
   width: 100%;
 }
 
-
+.end-button {
+	color: red;
+	background-color: rgba(255, 255, 255, 0.2);
+	padding: 0 24px;
+}
