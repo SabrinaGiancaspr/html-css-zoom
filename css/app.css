@@ -23,7 +23,10 @@ img{
   color: white;
 }
 
-
+.main-container{
+  display: flex;
+  flex-grow: 1;
+}
 .app-content{
   flex-grow: 1;
   overflow: auto;
@@ -39,7 +42,6 @@ img{
 .webcam-wrapper {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
 }
 
 .details{
@@ -82,7 +84,7 @@ img{
   padding: 16px 16px;
 }
 
-,.toolbar-item > i{
+.toolbar-item > i{
   font-size: 13px;
 }
 
